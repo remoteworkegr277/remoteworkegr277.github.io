@@ -8,6 +8,26 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #dddddd;
+    }
+    
+    tr, th, td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        font-size: 20px;
+    }
+
+    td {
+        font-size: 15px;
+    }
+</style>
+
 
 <body style="background-color: rgb(36, 36, 36);">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -36,9 +56,39 @@
 
 
     <div class="container pt-5 pb-5">
-    <h3 class="mt-5 mb-5 mr-5 ml-5" style="color:white">Graphs</h3>
+    <h3 class="mt-5 mb-5 mr-5 ml-5" style="color:white">Contributions from Various Social Groups in the Release notes for April 19, 2020</h3>
     <h4 class="mt-5 mb-5 mr-5 ml-5" style="color:white">
+        <table>
+            <tr>
+                <th>Remote Workers</th>
+                <th>Hackers / Pranksters</th>
+                <th>Sofware Engineers / Companies</th>
+                <th>Educational Institutions</th>
+            </tr>
 
+            <tr>
+                <td>Presentation slide control - Windows, macOS</td>
+                <td>Setting to allow host to report participants to Zoom</td>
+                <td>Added a new request field(“embed_password_in_join_link”) to the Account/Group/User Settings APIs</td>
+                <td>Skype for Business (Lync) users will join webinars as attendees by default</td>
+            </tr>
+
+            <tr>
+                <td>Enhanced privacy design on user profile page</td>
+                <td>Setting to show participants’ profile pictures</td>
+                <td>Added a new response field(“embed_password_in_join_link”) to the Account/Group/User Settings APIs</td>
+                <td>Link accounts to an organization</td>
+            </tr>
+
+
+            <tr>
+                <td>Setting to show participants’ profile pictures</td>
+                <td>Improvements to encryption</td>
+                <td>Embed password in the “join_url” field when “embed_password_in_join_link” option is enabled in settings</td>
+                <td>Resolved an issue with recurring event exceptions not syncing properly</td>
+            </tr>
+
+        </table>
     </h4>
     </div>
 
