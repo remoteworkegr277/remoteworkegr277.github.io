@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Meeting Room</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+
+<body style="background-color: rgb(36, 36, 36);">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Header -->
+    <div class = "w-100" style="background-color:rgb(27, 27, 27); height:15px"></div>
+
+    <div class="fixed-top" style="height:25px">
+        <div class="row h-100">
+            <div class="col-md- h-100"><a href="index.html"><img src="images/greensecurity.png" class="h-100 pt-1 pl-4" title="Thesis"></a></div>
+            <div class="col h-100"></div>
+            <div class="col-md- h-100"></div>
+            <div class="col-md- h-100"></div>
+            <div class="col-md- h-100"></div>
+            <div class="col-md- h-100"></div>
+            <div class="col-md- h-100"></div>
+            <div class="col-md- h-100"></div>
+            <div class="col-md- h-100"></div>
+            <div class="col-md- h-100"></a></div>
+            <div class="col h-100"></div>
+            <div class="col h-100"><a href="about.html"><img src="images/viewgallery.png" class="float-right h-100 pt-1 pr-2" title="About Us"></a></div>
+        </div>
+    </div>
+
+
+    <img class = "w-100 h-100 mt-4 mb-4 position-absolute" src="images/participants_background.png">
+    <img id = "scot1" class = "w-100 mt-5 position-relative" src="images/scot_tech_white.png" onmouseenter="change_to_gray_1()" onmouseleave="change_to_white_1()" onclick="show_scot_1()">
+    <img id = "scot2" class = "w-100 mt-1 position-relative" src="images/scot_remoteworkers_white.png" onmouseover="change_to_gray_2()" onmouseleave="change_to_white_2()" onclick="show_scot_2()">
+    <img id = "scot3" class = "w-100 mt-1 position-relative" src="images/scot_pranksters_white.png" onmouseover="change_to_gray_3()" onmouseleave="change_to_white_3()" onclick="show_scot_3()">
+    <img id = "scot4" class = "w-100 mt-1 position-relative" src="images/scot_education_white.png" onmouseover="change_to_gray_4()" onmouseleave="change_to_white_4()" onclick="show_scot_4()">
+    <img id = "scot5" class = "w-100 mt-1 position-relative" src="images/scot_legal_white.png" onmouseover="change_to_gray_5()" onmouseleave="change_to_white_5()" onclick="show_scot_5()">
+    <img id = "scot6" class = "w-100 mt-1 position-relative" src="images/scot_closure_white.png" onmouseover="change_to_gray_6()" onmouseleave="change_to_white_6()" onclick="show_scot_6()">
+
+    <script>
+        function change_to_gray_1() {
+          document.getElementById("scot1").src = "images/scot_tech_gray.png";
+        }
+        function change_to_white_1() {
+          document.getElementById("scot1").src = "images/scot_tech_white.png";
+        }
+
+        function change_to_gray_2() {
+          document.getElementById("scot2").src = "images/scot_remoteworkers_gray.png";
+        }
+        function change_to_white_2() {
+          document.getElementById("scot2").src = "images/scot_remoteworkers_white.png";
+        }
+
+        function change_to_gray_3() {
+          document.getElementById("scot3").src = "images/scot_pranksters_gray.png";
+        }
+        function change_to_white_3() {
+          document.getElementById("scot3").src = "images/scot_pranksters_white.png";
+        }
+
+        function change_to_gray_4() {
+          document.getElementById("scot4").src = "images/scot_education_gray.png";
+        }
+        function change_to_white_4() {
+          document.getElementById("scot4").src = "images/scot_education_white.png";
+        }
+
+        function change_to_gray_5() {
+          document.getElementById("scot5").src = "images/scot_legal_gray.png";
+        }
+        function change_to_white_5() {
+          document.getElementById("scot5").src = "images/scot_legal_white.png";
+        }
+
+        function change_to_gray_6() {
+          document.getElementById("scot6").src = "images/scot_closure_gray.png";
+        }
+        function change_to_white_6() {
+          document.getElementById("scot6").src = "images/scot_closure_white.png";
+        }
+
+        function show_scot_1() {
+            document.getElementById("scot_tech").style.visibility = "visible";
+            document.getElementById("scot_pranksters").style.visibility = "hidden";
+            document.getElementById("scot_education").style.visibility = "hidden";
+            document.getElementById("scot_legal").style.visibility = "hidden";
+            document.getElementById("scot_remoteworkers").style.visibility = "hidden";    
+            document.getElementById("scot_closure").style.visibility = "hidden";      }
+
+        function show_scot_2() {
+            document.getElementById("scot_tech").style.visibility = "hidden";
+            document.getElementById("scot_pranksters").style.visibility = "hidden";
+            document.getElementById("scot_education").style.visibility = "hidden";
+            document.getElementById("scot_legal").style.visibility = "hidden";
+            document.getElementById("scot_remoteworkers").style.visibility = "visible";
+            document.getElementById("scot_closure").style.visibility = "hidden";  
+        }
+
+        function show_scot_3() {
+            document.getElementById("scot_tech").style.visibility = "hidden";
+            document.getElementById("scot_pranksters").style.visibility = "visible";
+            document.getElementById("scot_education").style.visibility = "hidden";
+            document.getElementById("scot_legal").style.visibility = "hidden";
+            document.getElementById("scot_remoteworkers").style.visibility = "hidden";  
+            document.getElementById("scot_closure").style.visibility = "hidden";        }
+
+        function show_scot_4() {
+            document.getElementById("scot_tech").style.visibility = "hidden";
+            document.getElementById("scot_pranksters").style.visibility = "hidden";
+            document.getElementById("scot_education").style.visibility = "visible";
+            document.getElementById("scot_legal").style.visibility = "hidden";
+            document.getElementById("scot_remoteworkers").style.visibility = "hidden"; 
+            document.getElementById("scot_closure").style.visibility = "hidden";           }
+
+        function show_scot_5() {
+            document.getElementById("scot_tech").style.visibility = "hidden";
+            document.getElementById("scot_pranksters").style.visibility = "hidden";
+            document.getElementById("scot_education").style.visibility = "hidden";
+            document.getElementById("scot_legal").style.visibility = "visible";
+            document.getElementById("scot_remoteworkers").style.visibility = "hidden"; 
+            document.getElementById("scot_closure").style.visibility = "hidden";            }
+
+        function show_scot_6() {
+            document.getElementById("scot_tech").style.visibility = "hidden";
+            document.getElementById("scot_pranksters").style.visibility = "hidden";
+            document.getElementById("scot_education").style.visibility = "hidden";
+            document.getElementById("scot_legal").style.visibility = "hidden";
+            document.getElementById("scot_remoteworkers").style.visibility = "hidden";  
+            document.getElementById("scot_closure").style.visibility = "visible";         
+       }
+    </script>
+
+    <p id = "scot_tech" style = "visibility: hidden; background-color:rgb(239, 239, 239);" class="p-5 w-100 position-absolute rounded">
+        The rise, sustenance, future outlook of Zoom is both social and technical in nature - aka sociotechnical in nature.
+
+        * we have seen schools and workplaces open in-person in the past year. Data from CDC’s COVID Data Tracker show that, in the United States, the daily number of covid cases is dropping rapidly. And with such positive statistics, I hear that Princeton University recently retracted its mask mandate for students, staff, and faculty. This puts the remote work technology that we have been heavily relying on the past couple years in a very interesting position. So I wanted to look at our collective experience with remote work technologies, specifically the communications technologies, and see where it is headed and see if it will be remembered by future generations as a sort of blast from the past.
+
+        * According to the Pew Research Center, after the coronavirus outbreak, approximately 51% of employed adults shifted to remote working. Such drastic change in work styles gave rise to technologies like zoom, google meet, and microsoft teams. Just last month, in March, Zoom released 10 new updates. Among them is an interesting, new feature release from March 21 that allows users to replace their personas with 3-d virtual avatars that, if I were to just imagine, might introduce some fun into long, strenuous virtual meetings. Largely, though, when we consider these remote working technologies, we see them as replacements for in-person educational implements. Zoom, for example, displays a whiteboard, annotation tools, and a “raise hand” feature that mirror certain aspects of in-person education.
+    </p>
+
+    <p id = "scot_remoteworkers" style = "visibility: hidden; background-color:rgb(239, 239, 239);" class="p-5 w-100 position-absolute rounded" style="background-color:rgb(239, 239, 239);">
+        oink
+    </p>
+
+    <p id = "scot_pranksters" style = "visibility: hidden; background-color:rgb(239, 239, 239);" class="p-5 w-100 position-absolute rounded" style="background-color:rgb(239, 239, 239);">
+        hello
+    </p>
+
+    <p id = "scot_education" style = "visibility: hidden; background-color:rgb(239, 239, 239);" class="p-5 w-100 position-absolute rounded" style="background-color:rgb(239, 239, 239);">
+        ?
+    </p>
+
+    <p id = "scot_legal" style = "visibility: hidden; background-color:rgb(239, 239, 239);" class="p-5 w-100 position-absolute rounded" style="background-color:rgb(239, 239, 239);">
+        alo
+    </p>
+
+    <p id = "scot_closure" style = "visibility: hidden; background-color:rgb(239, 239, 239);" class="p-5 w-100 position-absolute rounded" style="background-color:rgb(239, 239, 239);">
+        a
+    </p>
+
+
+
+
+    <!-- Footer - zoom buttons -->
+
+    <div class="fixed-bottom h-25">
+        <div class="row h-75"></div>
+        <div class="row h-25" style="background-color:rgb(27, 27, 27);">
+            <div class="col-md- h-100"><a href="sitemap.html"><img src="images/unmute.png" class="h-100 pt-2 pl-3" title="Site Map"></a></div>
+            <div class="col h-100"><a href="introduction.html"><img src="images/startvideo.png" class="h-100 pt-2" title="Introduction"></a></div>
+            <div class="col-md- h-100"></div>
+            <div class="col-md- h-100"><a href="controversies.html"><img src="images/security.png" class="h-100 pt-2 pl-4" title="Controversies"></a></div>
+            <div class="col-md- h-100"><a href="liabilitynewness.html"><img src="images/chat.png" class="h-100 pt-2 pl-2" title="Liability of Newness"></a></div>
+            <div class="col-md- h-100"><a href="scot.html"><img src="images/participants.png" class="h-100 pt-2 pl-2" title="Social Construction of Technology"></a></div>
+            <div class="col-md- h-100"><a href="property.html"><img src="images/sharescreen.png" class="h-100 pt-2 pl-2" title="Intellectual Property"></a></div>
+            <div class="col-md- h-100"><a href="lock-in.html"><img src="images/record.png" class="h-100 pt-2 pl-1 pl-2" title="Lock-in"></a></div>
+            <div class="col-md- h-100"><a href="graphs.html"><img src="images/livetranscript.png" class="h-100 pt-2 pl-2" title="Graphs"></a></div>
+            <div class="col-md- h-100"><a href="digital-divide.html"><img src="images/breakoutrooms.png" class="h-100 pt-2 pl-4" title="Digital Divide"></a></div>
+            <div class="col h-100"><a href="ramifications.html"><img src="images/reactions.png" class="h-100 pt-2 pl-2 pl-2" title="Ramifications"></a></div>
+            <div class="col h-100"><a href="bibliography.html"><img src="images/endmeeting.png" class="float-right h-100 pt-2 pr-0" title="Bibliography"></a></div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
